@@ -11,4 +11,20 @@ public class DemoController {
 		
 		return "home";
 	}
+	
+	// add another request mappping for /leaders
+	@GetMapping("/leaders")
+	public String showLeaders() {
+		
+		return "leaders";
+	}
+	
+	// add another request mappping for /systems
+		@GetMapping("/systems")
+		public String showSystems() {
+			
+			return "systems";
+		}
+	
+	
 }

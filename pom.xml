@@ -34,11 +34,31 @@
 			<version>${springsecurity.version}</version>
 		</dependency>
 		
+		<!-- Add Spring Security Taglibs support -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${springsecurity.version}</version>
+		</dependency>
+		
 		<!-- Spring MVC support -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${springframework.version}</version>
+		</dependency>
+		
+		<!-- Add MySQL and C3P0 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.45</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.5.2</version>
 		</dependency>
 
 		<!-- Servlet, JSP and JSTL support -->
@@ -76,7 +96,7 @@
 
 	</dependencies>
 
-	<!-- DONE : Add support for Maven WAR Plugin -->
+	<!-- Add support for Maven WAR Plugin -->
 	<build>
 		<finalName>spring-security-demo</finalName>
 		<pluginManagement>
@@ -90,8 +110,4 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-
-
-
-
 </project>
